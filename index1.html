@@ -1,256 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life Coach Reiki - Transform Your Life</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            serif: ['"Playfair Display"', 'serif'],
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-          },
-          colors: {
-            brandCream: '#FDFBF7',
-            brandYellow: '#FCD307',
-            brandDark: '#1A1A1A',
-            brandGray: '#595959',
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body class="bg-brandCream font-sans text-brandDark flex justify-center antialiased">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Fraunces for all large/display text -->
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap" rel="stylesheet">
 
-  <div class="w-[1512px] min-h-[6978.9px] bg-brandCream flex flex-col relative shadow-2xl overflow-x-hidden">
+        <style>
+            @import "tailwindcss";
 
-    <header class="w-full h-[100px] px-24 flex items-center justify-between border-b border-gray-100 bg-brandCream">
-      <div class="flex items-center">
-        <img src="Logo.png" alt="Life Coach Reiki Logo" class="h-8 object-contain">
-      </div>
-      <nav class="flex items-center gap-10 font-medium text-[15px]">
-        <a href="#" class="hover:text-opacity-80 transition-all">Blog</a>
-        <a href="#" class="hover:text-opacity-80 transition-all">About</a>
-        <a href="#" class="hover:text-opacity-80 transition-all">FAQs</a>
-        <a href="#" class="hover:text-opacity-80 transition-all">Programmes</a>
-        <a href="#" class="border border-brandDark px-5 py-2.5 rounded-full hover:bg-brandDark hover:text-white transition-all text-[14px]">Learn More</a>
-        <a href="#" class="bg-brandDark text-white px-5 py-2.5 rounded-full hover:bg-opacity-90 transition-all text-[14px]">Free Consultation</a>
-      </nav>
-    </header>
+            /*
+              Font mapping:
+              - font-serif  -> Fraunces (used for all large/display text: H1-H3, big quote, etc.)
+              - font-sans   -> Avenir (used for everything else: nav, body copy, buttons, labels)
 
-    <section class="w-full pt-24 pb-16 px-24 text-center bg-brandCream flex flex-col items-center">
-      <span class="text-xs tracking-[0.2em] uppercase font-semibold text-brandGray mb-4">Free Webinar</span>
-      <h1 class="font-serif text-[64px] leading-[1.15] max-w-[900px] mb-6">
-        Transform Your Life With The Guidance Of A Certified Life Coach
-      </h1>
-      <p class="text-brandGray text-[18px] max-w-[620px] mb-10 leading-relaxed">
-        Unlock your potential, break past internal barriers, and build a cohesive vision for your professional and daily personal life.
-      </p>
-      <div class="flex gap-4 mb-16">
-        <button class="border border-brandDark px-8 py-3.5 rounded-full font-medium hover:bg-brandDark hover:text-white transition-all">Learn More</button>
-        <button class="bg-brandDark text-white px-8 py-3.5 rounded-full font-medium hover:bg-opacity-90 transition-all">Register</button>
-      </div> 
-      
-      <div class="w-full h-[240px] rounded-2xl overflow-hidden mt-4">
-        <img 
-          src="Container.png" 
-          alt="Geometric Artwork Banner" 
-          class="w-full h-full object-cover object-center"
-        />
-      </div>
-    </section>
+              Avenir is a licensed Linotype font and is not distributed on Google Fonts.
+              We reference it directly so it's used automatically on any device/OS that
+              already has it installed (e.g. macOS ships with Avenir), and fall back to
+              very close, freely available system/sans alternatives everywhere else.
+            */
+            @theme {
+                --font-serif: 'Fraunces', serif;
+                --font-sans: 'Avenir', 'Avenir Next', 'Avenir Next LT Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            }
 
-    <section class="w-full py-24 px-24 grid grid-cols-2 gap-20 bg-brandCream items-start">
-      <div class="border-t-2 border-orange-400 pt-8">
-        <h3 class="font-serif text-[42px] leading-tight mb-4">
-          Are you feeling stuck in your career?
-        </h3>
-      </div>
-      <div class="border-t-2 border-blue-400 pt-8">
-        <h3 class="font-serif text-[42px] leading-tight mb-4">
-          Struggling to find balance in your personal life?
-        </h3>
-      </div>
-    </section>
+            html { -webkit-text-size-adjust: 100%; }
+        </style>
 
-    <section class="w-full bg-brandYellow py-16 px-24 text-center flex flex-col items-center justify-center">
-      <h2 class="font-serif text-[38px] text-brandDark mb-4 font-medium">
-        If so, join us for this free webinar!
-      </h2>
-      <p class="text-brandDark opacity-80 text-[16px] max-w-[600px] mb-6">
-        Reserve your spot today and craft the clear blueprint you need to execute path alterations seamlessly.
-      </p>
-      <button class="bg-brandDark text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all">
-        Sign Up
-      </button>
-    </section>
+    <body class="font-sans antialiased bg-[#FDF8F2] text-[#1A1A1A]">
 
-    <section class="w-full grid grid-cols-2 bg-brandCream">
-      <div class="flex flex-col justify-center px-24 py-24">
-        <span class="text-xs tracking-widest uppercase font-semibold text-brandGray mb-3">Host</span>
-        <h2 class="font-serif text-[48px] mb-6">Meet Reiki</h2>
-        <p class="text-brandGray text-[16px] leading-relaxed max-w-[450px] mb-8">
-          With 10+ years of empowering guiding architectures, Reiki handles unique client pathways with targeted balance blueprints.
-        </p>
-        <button class="bg-brandDark text-white px-6 py-3 rounded-full text-sm font-medium self-start hover:bg-opacity-90 transition-all">
-          Read My Story
-        </button>
-      </div>
-      <div class="w-full h-[600px] bg-gray-200">
-        <img src="reiki-portrait.png" alt="Reiki portrait" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/750x600?text=Reiki+Portrait'">
-      </div>
-    </section>
+        <div class="w-full max-w-[1512px] mx-auto flex flex-col relative overflow-x-hidden">
+            <!--Navigation Bar-->
+            <header class="w-full px-6 sm:px-10 md:px-16 lg:px-[88px] py-6 md:py-8 flex items-center justify-between gap-4">
+                <div class="flex items-center shrink-0">
+                    <img src="Logo.png" alt="Life Coach Reiki Logo" class="h-6 md:h-7 object-contain">
+                </div>
+                <nav class="hidden lg:flex items-center gap-6 xl:gap-10 font-medium text-base xl:text-lg whitespace-nowrap">
+                    <a href="#">Read</a>
+                    <a href="#">Listen</a>
+                    <a href="#">Talk</a>
+                    <a href="#">Transform</a>
+                    <a href="#" class="border border-black rounded-full px-3 py-2">Know Reiki</a>
+                    <a href="#" class="border border-black bg-black text-white rounded-full px-3 py-2">Consult With Reiki</a>
+                </nav>
+                <a href="#" class="lg:hidden border border-black bg-black text-white rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap">Consult</a>
+            </header>
 
-    <section class="w-full py-24 px-24 text-center bg-brandCream">
-      <h2 class="font-serif text-[40px] mb-16">Checkout Our Free Resources</h2>
-      
-      <div class="grid grid-cols-3 gap-12 max-w-[1100px] mx-auto">
-        <div class="flex flex-col items-center">
-          <div class="w-full h-[180px] bg-orange-100 rounded-xl mb-6 overflow-hidden flex items-center justify-center">
-            <span class="text-3xl">▶</span>
-          </div>
-          <h4 class="font-semibold text-lg mb-2">Watch</h4>
-          <p class="text-brandGray text-sm max-w-[250px]">Learn internal systems dynamics through short daily videos.</p>
+            <!--Section 1st-->
+
+            <section class="w-full px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 text-center flex flex-col items-center">
+                <span class="bg-gray-200 border border-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mb-4">Free Webinar</span>
+                <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[72px] max-w-3xl mb-6 leading-tight">Transform Your Life with the Guidance of a Certified Life Coach</h1>
+                <p class="text-gray-500 text-base md:text-xl max-w-[700px] mb-8 md:mb-12">Free 90-minute webinar, Reiki will teach you effective and respectful strategies for to improve productivity and well being in your life.</p>
+                <div class="flex flex-wrap justify-center gap-4 mb-4">
+                    <button class="border border-black px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-base">Learn More</button>
+                    <button class="bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-base">Register</button>
+                </div>
+
+                <div class="w-full max-w-[1280px] h-[180px] sm:h-[240px] md:h-[304px] rounded-2xl overflow-hidden mt-4">
+                    <img src="Container.png" alt="Geometric Artwork Banner" class="w-full h-full object-cover object-center">
+                </div>
+            </section>
+
+            <!--Section 2nd-->
+
+            <section class="text-[#211F1F] antialiased">
+                <div class="px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-start">
+                    <div class="space-y-6">
+                        <div class="w-full h-[3px] bg-[#D95D39]"></div>
+                        <div class="pt-2">
+                            <img src="Question-Square 1.png" alt="Question Icon 1" class="w-8 h-8 object-contain" />
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-md">
+                            Are you feeling stuck in your career?
+                        </h2>
+                    </div>
+                    <div class="space-y-6 md:mt-24">
+                        <div class="w-full h-[3px] bg-[#3A86C8]"></div>
+                        <div class="pt-2">
+                            <img src="Question-Square 2.png" alt="Question Icon 2" class="w-8 h-8 object-contain" />
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-md">
+                            Struggling to find balance in your personal life?
+                        </h2>
+                    </div>
+                </div>
+                <div class="h-12 md:h-24"></div>
+                <div class="bg-[#FCD116] text-center px-6 py-14 md:py-20 flex flex-col items-center justify-center space-y-6">
+                    <h3 class="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight text-[#1A1A1A]">
+                        If so, join us for this free webinar!
+                    </h3>
+                    <p class="font-sans text-sm md:text-base text-[#333333] max-w-xl leading-relaxed">
+                        Whatever the case may be, a certified life coach can guide you towards the path of self-discovery and personal growth.
+                    </p>
+                    <button class="mt-4 bg-[#1A1A1A] text-white font-sans text-sm px-8 py-3 rounded-full hover:bg-black transition-colors duration-200">
+                        Join Us
+                    </button>
+                </div>
+            </section>
+
+            <!--Section 3rd-->
+
+            <section class="w-full grid grid-cols-1 md:grid-cols-2">
+                <div class="flex flex-col justify-center items-center px-6 sm:px-12 md:px-16 lg:px-24 py-16 md:py-24 text-center order-2 md:order-1">
+                    <span class="bg-gray-200 border border-gray-200 rounded-full px-2 py-1 text-sm md:text-lg font-semibold text-gray-700 mb-4">Presenter</span>
+                    <h2 class="font-serif text-3xl md:text-4xl lg:text-[48px] mb-6">Meet Reiki</h2>
+                    <p class="text-base md:text-lg max-w-[350px] mb-8">
+                        Reiki is a best-selling parenting author and speaker, and creator of this LifeCoach course
+                    </p>
+                    <button class="bg-black text-white px-6 py-3 rounded-full text-sm font-medium">
+                        Read My Reiki
+                    </button>
+                </div>
+                <div class="w-full h-[320px] md:h-[600px] lg:h-[720px] bg-gray-200 order-1 md:order-2">
+                    <img src="reiki-portrait.png" alt="Reiki portrait" class="w-full h-full object-cover">
+                </div>
+            </section>
+
+            <!--Section 4th-->
+
+            <section class="w-full py-16 md:py-24 px-6 sm:px-12 md:px-16 lg:px-24 text-center">
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-[40px] mb-12 md:mb-16">Checkout Our Free Resources</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-[32px] max-w-[1100px] mx-auto">
+                    <div class="flex flex-col items-center">
+                        <div class="w-full h-[160px] md:h-[180px] rounded-xl mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="Watch.png">
+                        </div>
+                        <h4 class="font-semibold text-lg mb-2">Watch</h4>
+                        <p class="text-brandGray text-sm max-w-[250px]">Learn internal systems dynamics through short daily videos.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-full h-[160px] md:h-[180px] rounded-xl mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="Read.png">
+                        </div>
+                        <h4 class="font-semibold text-lg mb-2">Read</h4>
+                        <p class="text-brandGray text-sm max-w-[250px]">Deep dive frameworks inside curated, downloadable guides.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-full h-[160px] md:h-[180px] rounded-xl mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="Listen.png">
+                        </div>
+                        <h4 class="font-semibold text-lg mb-2">Listen</h4>
+                        <p class="text-brandGray text-sm max-w-[250px]">Audio configurations designed around modern workflows.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Section 5th-->
+
+            <section class="w-full px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div class="md:pl-12 lg:pl-24 md:pr-8 lg:pr-16 py-8 md:py-20 flex flex-col justify-center order-2 md:order-1">
+                    <span class="font-serif text-4xl text-brandGray mb-6">"</span>
+                    <h3 class="font-serif text-xl sm:text-2xl md:text-[32px] leading-snug mb-8 text-brandDark">
+                        Thanks to this life coach, I have a clear roadmap for achieving my goals and creating the life I want. I'm so grateful for their support and guidance.
+                    </h3>
+                    <button class="bg-black text-white px-6 py-3 rounded-full text-sm font-medium self-start">
+                        Read My Reiki
+                    </button>
+                </div>
+                <div class="w-full h-[280px] md:h-[450px] lg:h-[550px] bg-gray-100 order-1 md:order-2">
+                    <img src="Image1.png" class="w-full h-full object-cover">
+                </div>
+            </section>
+
+            <!--Section 6th-->
+
+            <section class="px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[32px] items-start">
+                <div class="flex flex-col items-center text-center space-y-4 max-w-xl mx-auto">
+                    <div class="mb-2">
+                        <img src="activity-heart.png" alt="Activity Heart" class="w-10 h-10 object-contain" />
+                    </div>
+                    <h3 class="font-serif text-xl sm:text-2xl md:text-3xl font-light leading-snug tracking-tight max-w-md">
+                        Gain clarity, focus, and confidence in your abilities
+                    </h3>
+                    <p class="font-sans text-xs md:text-sm text-gray-500 max-w-sm leading-relaxed">
+                        Our experienced coaches work with you to identify and overcome limiting beliefs, create a roadmap for success, and provide ongoing support and guidance.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center text-center space-y-4 max-w-xl mx-auto">
+                    <div class="mb-2">
+                        <img src="message-smile-circle.png" alt="Message Smile Circle" class="w-10 h-10 object-contain" />
+                    </div>
+                    <h3 class="font-serif text-xl sm:text-2xl md:text-3xl font-light leading-snug tracking-tight max-w-md">
+                        Create the life you want
+                    </h3>
+                    <p class="font-sans text-xs md:text-sm text-gray-500 max-w-sm leading-relaxed">
+                        Don't let fear or self-doubt hold you back any longer. Our life coaching services can help you gain the clarity and direction you need to create the life you want.
+                    </p>
+                </div>
+            </section>
+
+            <!--Section 7th-->
+            <section class="relative px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 w-full bg-[#FAF6F0]">
+                <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-[#1A1A1A] z-0"></div>
+                <div class="relative z-10 bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 max-w-7xl mx-auto">
+                    <div class="max-w-xl text-center lg:text-left">
+                        <h2 class="font-serif font-light text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#1A1A1A] leading-snug tracking-tight">
+                            Contact us today to schedule a session and start living the life you want.
+                        </h2>
+                    </div>
+                    <div class="w-full max-w-md flex flex-col space-y-2">
+                        <form class="flex flex-col sm:flex-row items-center gap-3 w-full">
+                            <div class="relative flex-grow w-full">
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    class="w-full px-4 py-3 font-sans text-sm rounded-lg border border-gray-300 focus:outline-none focus:border-gray-500 bg-white text-gray-800 transition-colors"
+                                    required/>
+                            </div>
+                            <button type="submit" class="w-full sm:w-auto bg-[#1A1A1A] text-white font-sans text-sm font-medium px-6 py-3 rounded-full hover:bg-black transition-colors duration-200 whitespace-nowrap">
+                                Sign Up
+                            </button>
+                        </form>
+                        <p class="font-sans text-xs text-gray-500 text-center lg:text-left">
+                            We care about your data in our
+                            <a href="#" class="underline text-gray-700 hover:text-black">privacy policy</a>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Section 8th-->
+            <section class="w-full bg-[#1A1A1A] text-white px-6 sm:px-10 md:px-16 lg:px-[116px] pb-12 md:pb-16 lg:pb-24 pt-12 md:pt-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start max-w-7xl mx-auto">
+                    <div class="space-y-6">
+                        <h2 class="font-serif font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#92A65F] tracking-tight">
+                            Sunday, 19th March
+                        </h2>
+                        <p class="font-sans text-sm md:text-base text-gray-300 flex flex-wrap items-center gap-2 leading-relaxed tracking-wide">
+                            <span>🇬🇧 UK 6pm</span>
+                            <span class="text-gray-500">/</span>
+                            <span>🇺🇸 US 10:00 am PST</span>
+                            <span class="text-gray-500">/</span>
+                            <span>11:00 am MT</span>
+                            <span class="text-gray-500">/</span>
+                            <span>12:00 noon CT</span>
+                            <span class="text-gray-500">/</span>
+                            <span>1:00 pm ET</span>
+                        </p>
+                        <div class="pt-2">
+                            <button class="inline-flex items-center space-x-2 border border-white/60 hover:border-white text-white font-sans text-xs md:text-sm px-5 py-2.5 rounded-full transition-colors duration-200">
+                                <span>Add to Calendar</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <h2 class="font-serif font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white tracking-tight">
+                            Online on Zoom
+                        </h2>
+                        <p class="font-sans text-sm md:text-base text-gray-400 leading-relaxed">
+                            Link will be shared before the event
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Section 9th-->
+
+            <section class="w-full px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 flex flex-col items-center justify-between gap-12">
+                <div class="text-center max-w-2xl mx-auto space-y-4">
+                    <h2 class="font-serif font-light text-3xl sm:text-4xl md:text-5xl tracking-tight">
+                        Invite your friends
+                    </h2>
+                    <p class="font-sans text-sm text-gray-600 leading-relaxed max-w-xl mx-auto">
+                        We work with you to identify areas for improvement, develop effective communication strategies, and provide ongoing support and guidance.
+                    </p>
+                </div>
+                <div class="w-full flex items-center justify-center overflow-hidden">
+                    <img src="Beige Modern Illustration Fundraiser Charity Event Flyer 1.png" class="max-h-[300px] sm:max-h-[450px] md:max-h-[650px] w-auto object-contain drop-shadow-sm rounded-sm"/>
+                </div>
+                <div>
+                    <button class="bg-[#1A1A1A] text-white font-sans text-sm font-medium px-8 py-3.5 rounded-full hover:bg-black transition-colors duration-200 shadow-sm">
+                        Share About The Event
+                    </button>
+                </div>
+            </section>
+
+            <!--Section 10th-->
+
+            <footer class="w-full bg-[#1A1A1A] text-white px-6 sm:px-10 md:px-16 lg:px-[116px] pt-12 md:pt-16 pb-10 md:pb-12 flex flex-col">
+                <div class="flex flex-col space-y-6 items-start">
+                    <h2 class="font-serif font-black text-2xl md:text-3xl tracking-tight text-white">
+                        Life Coach Reiki
+                    </h2>
+
+                    <!-- Footer Navigation Links -->
+                    <nav class="flex flex-wrap items-center gap-x-6 md:gap-x-8 gap-y-3 font-sans text-sm text-gray-300">
+                        <a href="#">About Us</a>
+                        <a href="#">Success Stories</a>
+                        <a href="#">Amazon Shop</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Privacy</a>
+                    </nav>
+                </div>
+                <div class="w-full h-[1px] bg-gray-800 my-8"></div>
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="font-sans text-xs md:text-sm text-gray-400">
+                        &copy; 2023 Life Coach Reiki. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-5">
+                        <a href="#">
+                            <img src="Social icon (0).png" alt="Twitter"/>
+                        </a>
+                        <a href="#">
+                            <img src="Social icon (1).png" alt="LinkedIn"/>
+                        </a>
+                        <a href="#">
+                            <img src="Social icon (2).png" alt="Facebook"/>
+                        </a>
+                        <a href="#">
+                            <img src="Social icon (3).png" alt="GitHub"/>
+                        </a>
+                        <a href="#">
+                            <img src="Social icon (4).png" alt="AngelList"/>
+                        </a>
+                        <a href="#">
+                            <img src="Social icon (5).png" alt="Dribbble"/>
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </div>
-
-        <div class="flex flex-col items-center">
-          <div class="w-full h-[180px] bg-blue-100 rounded-xl mb-6 overflow-hidden flex items-center justify-center">
-            <span class="text-3xl">📚</span>
-          </div>
-          <h4 class="font-semibold text-lg mb-2">Read</h4>
-          <p class="text-brandGray text-sm max-w-[250px]">Deep dive frameworks inside curated, downloadable guides.</p>
-        </div>
-
-        <div class="flex flex-col items-center">
-          <div class="w-full h-[180px] bg-emerald-100 rounded-xl mb-6 overflow-hidden flex items-center justify-center">
-            <span class="text-3xl">🎧</span>
-          </div>
-          <h4 class="font-semibold text-lg mb-2">Listen</h4>
-          <p class="text-brandGray text-sm max-w-[250px]">Audio configurations designed around modern workflows.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="w-full grid grid-cols-2 bg-brandCream items-center">
-      <div class="pl-24 pr-16 py-20 flex flex-col justify-center">
-        <span class="text-4xl text-brandGray mb-6">“</span>
-        <h3 class="font-serif text-[32px] leading-snug mb-8 text-brandDark">
-          Thanks to this life coach, I have a clear roadmap for achieving my goals and creating the life I want. I'm so grateful for their support and guidance.
-        </h3>
-        <button class="bg-brandDark text-white px-6 py-3 rounded-full text-sm font-medium self-start hover:bg-opacity-90 transition-all">
-          See Reviews
-        </button>
-      </div>
-      <div class="w-full h-[550px] bg-gray-100">
-        <img src="client-meeting.jpg" alt="Coaching session testimonial" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/750x550?text=Client+Interaction'">
-      </div>
-    </section>
-
-    <section class="w-full py-24 px-24 grid grid-cols-2 gap-16 bg-brandCream border-t border-b border-gray-100">
-      <div class="flex flex-col items-center text-center px-8">
-        <div class="w-12 h-12 rounded-full border border-blue-300 flex items-center justify-center mb-6 text-blue-500">✓</div>
-        <h4 class="font-serif text-[24px] mb-3">Gain Clarity, Focus, and Direction in your life</h4>
-        <p class="text-brandGray text-sm max-w-[400px]">
-          We establish targeted metric boundaries to assist execution phases directly without overthinking roadblocks.
-        </p>
-      </div>
-
-      <div class="flex flex-col items-center text-center px-8">
-        <div class="w-12 h-12 rounded-full border border-orange-300 flex items-center justify-center mb-6 text-orange-500">☉</div>
-        <h4 class="font-serif text-[24px] mb-3">Create the Life you want</h4>
-        <p class="text-brandGray text-sm max-w-[400px]">
-          Set intentional milestones engineered around your custom lifestyle blueprint parameters.
-        </p>
-      </div>
-    </section>
-
-    <section class="w-full py-12 px-24 bg-brandCream flex justify-center">
-      <div class="w-full max-w-[1100px] bg-white rounded-2xl p-10 border border-gray-100 shadow-sm flex items-center justify-between">
-        <h4 class="font-serif text-[22px] max-w-[450px]">
-          Connect today to schedule a session and start living the life you want.
-        </h4>
-        <div class="flex items-center gap-3">
-          <input type="email" placeholder="Enter email..." class="border border-gray-300 rounded-full px-6 py-3 w-[320px] text-sm focus:outline-none focus:border-brandDark">
-          <button class="bg-brandDark text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all">Sign Up</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="w-full bg-brandDark text-white py-16 px-24 grid grid-cols-2 gap-12 items-center">
-      <div>
-        <h3 class="text-brandYellow font-serif text-[36px] mb-2 font-medium">Sunday, 19th March</h3>
-        <p class="text-gray-400 text-sm">Webinar starts online 10:00 AM EST / 3:00 PM GMT</p>
-        <button class="text-white underline text-xs tracking-wider mt-4 block hover:text-brandYellow transition-all">ADD TO CALENDAR</button>
-      </div>
-      <div class="border-l border-gray-700 pl-12">
-        <h3 class="font-serif text-[36px] mb-2 font-medium">Online on Zoom</h3>
-        <p class="text-gray-400 text-sm">Link Shared via Email Prior to Event Start.</p>
-      </div>
-    </section>
-
-    <section class="w-full py-24 px-24 text-center bg-brandCream flex flex-col items-center">
-      <h2 class="font-serif text-[42px] mb-4">Invite your friends</h2>
-      <p class="text-brandGray text-[16px] max-w-[550px] mb-12">
-        Growth functions better within support frameworks. Send an invitation directly to a peer mapping out career changes.
-      </p>
-      
-      <div class="w-[500px] bg-white border border-gray-200 rounded-2xl p-8 shadow-sm mb-10 text-left">
-        <div class="flex justify-between items-center mb-6 border-b border-gray-100 pb-4">
-          <span class="text-xs font-bold uppercase tracking-widest text-gray-400">Life Coaching Webinar</span>
-          <span class="text-xs text-gray-400">www.lifecoachreiki.com</span>
-        </div>
-        <div class="grid grid-cols-2 gap-4 items-center">
-          <div class="bg-orange-50 h-32 rounded-xl flex items-center justify-center text-4xl">🎨</div>
-          <div class="bg-blue-50 h-32 rounded-xl flex items-center justify-center text-4xl">🌱</div>
-        </div>
-      </div>
-
-      <button class="bg-brandDark text-white px-8 py-3.5 rounded-full font-medium hover:bg-opacity-90 transition-all text-sm">
-        Send Invitation Link
-      </button>
-    </section>
-
-    <footer class="w-full bg-brandDark text-white pt-16 pb-8 px-24 mt-auto">
-      <div class="flex justify-between items-start mb-12">
-        <div>
-          <h4 class="font-serif text-xl mb-4">Life Coach Reiki</h4>
-          <p class="text-xs text-gray-400 max-w-[280px]">Personalized architectural balance strategies for modern workframes.</p>
-        </div>
-        <div class="flex gap-16 text-sm text-gray-400">
-          <div class="flex flex-col gap-3">
-            <a href="#" class="hover:text-white transition-all">About Me</a>
-            <a href="#" class="hover:text-white transition-all">Privacy Policy</a>
-          </div>
-          <div class="flex flex-col gap-3">
-            <a href="#" class="hover:text-white transition-all">Terms of Use</a>
-            <a href="#" class="hover:text-white transition-all">Media</a>
-          </div>
-          <div class="flex flex-col gap-3">
-            <a href="#" class="hover:text-white transition-all">Technical Details</a>
-            <a href="#" class="hover:text-white transition-all">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-gray-800 pt-8 flex justify-between items-center text-xs text-gray-500">
-        <p>© 2026 Life Coach Reiki. All Rights Reserved.</p>
-        <div class="flex gap-4 text-base">
-          <a href="#" class="hover:text-white transition-all">🐦</a>
-          <a href="#" class="hover:text-white transition-all">📸</a>
-          <a href="#" class="hover:text-white transition-all">💼</a>
-          <a href="#" class="hover:text-white transition-all">🎥</a>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
-</body>
+    </body>
 </html>
