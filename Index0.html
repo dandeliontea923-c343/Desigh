@@ -9,154 +9,157 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     
         <style>
-            @import "tailwindcss";
+            html { -webkit-text-size-adjust: 100%; }
         </style>
 
-    <body class="font-sans flex justify-center antialiased">
+    <body class="w-screen h-screen min-h-screen m-0 p-0 font-sans antialiased bg-[#FDF8F2] text-[#1A1A1A]">
 
-        <div class="w-[1512px] h-[6878.9px] bg-[#FDF8F2] flex flex-col relative shadow-2xl overflow-x-hidden">
+        <div class="w-full  mx-auto flex flex-col relative overflow-x-hidden">
             <!--Navigation Bar-->
-            <header class="w-full h-[128px] px-[88px] py-[49.55px] flex items-center justify-between">
-                <div class="flex items-center">
-                    <img src="Logo.png" alt="Life Coach Reiki Logo" class="h-7 object-contain">
+            <header class="relative px-6 sm:px-10 md:px-16 lg:px-[88px] py-6 md:py-8 flex items-center justify-between gap-4">
+                <button id="menuBtn" class="block md:hidden">Menu</button>
+                <div class="flex items-center shrink-0">
+                    <img src="Logo.png" alt="Life Coach Reiki Logo" class="h-6 md:h-7 object-contain">
                 </div>
-                <nav class="flex items-center gap-[48px] font-medium text-2xl">
-                    <a href="#" >Read</a>
-                    <a href="#" >Listen</a>
-                    <a href="#" >Talk</a>
-                    <a href="#" >Tarnsform</a>
+                <nav id="mobileNav" class="absolute pl-6 top-full -left-full lg:static flex flex-col lg:flex-row items-start lg:items-center
+                    gap-4 lg:gap-6 xl:gap-10 font-medium text-base xl:text-lg whitespace-nowrap transition-all duration-300">
+                    <a href="#">Read</a>
+                    <a href="#">Listen</a>
+                    <a href="#">Talk</a>
+                    <a href="#">Transform</a>
                     <a href="#" class="border border-black rounded-full px-3 py-2">Know Reiki</a>
                     <a href="#" class="border border-black bg-black text-white rounded-full px-3 py-2">Consult With Reiki</a>
                 </nav>
+                <a href="#" class="lg:hidden border border-black bg-black text-white rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap">Consult</a>
             </header>
 
             <!--Section 1st-->
 
-            <section class="w-full px-[116px] py-[96px] text-center flex flex-col items-center">
-                <span class=" bg-gray-200 border border-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mb-4">Free Webinari</span>
-                <h1 class="font-serif text-[72px] max-w-[1200px] mb-[24px]">Transform Your Life with the Guidance of a Certified Life Coach</h1>
-                <p class="text-gray-500 text-xl max-w-[700px] mb-[48px]">Free 90-minute webinar, Reiki will teach you effective and respectful strategies for to improve productivity and well being in your life.</p>
-                <div class="flex gap-4 mb-4">
-                    <button class="border border-black px-8 py-4 rounded-full font-bold">Learn More</button>
-                    <button class="bg-black text-white px-8 py-4 rounded-full font-bold">Register</button>
+            <section class="w-full px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 text-center flex flex-col items-center">
+                <span class="bg-gray-200 border border-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mb-4">Free Webinar</span>
+                <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[72px] max-w-3xl mb-6 leading-tight">Transform Your Life with the Guidance of a Certified Life Coach</h1>
+                <p class="text-gray-500 text-base md:text-xl max-w-[700px] mb-8 md:mb-12">Free 90-minute webinar, Reiki will teach you effective and respectful strategies for to improve productivity and well being in your life.</p>
+                <div class="flex flex-wrap justify-center gap-4 mb-4">
+                    <button class="border border-black px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-base">Learn More</button>
+                    <button class="bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-sm md:text-base">Register</button>
                 </div>
 
-                <div class="w-[1280px] h-[304px] rounded-2xl overflow-hidden mt-4">
+                <div class="w-full max-w-[1280px] h-[180px] sm:h-[240px] md:h-[304px] rounded-2xl overflow-hidden mt-4">
                     <img src="Container.png" alt="Geometric Artwork Banner" class="w-full h-full object-cover object-center">
                 </div>
             </section>
 
             <!--Section 2nd-->
 
-            <Section class=" text-[#211F1F] font-serif antialiased"> 
-                <div class="px-[116px] py-[96px] grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-start">                    
+            <section class="text-[#211F1F] antialiased">
+                <div class="px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-start">
                     <div class="space-y-6">
-                    <div class="w-full h-[3px] bg-[#D95D39]"></div>                   
+                        <div class="w-full h-[3px] bg-[#D95D39]"></div>
                         <div class="pt-2">
                             <img src="Question-Square 1.png" alt="Question Icon 1" class="w-8 h-8 object-contain" />
-                        </div>                   
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-md">
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-md">
                             Are you feeling stuck in your career?
-                        </h1>
+                        </h2>
                     </div>
                     <div class="space-y-6 md:mt-24">
-                    <div class="w-full h-[3px] bg-[#3A86C8]"></div>                   
+                        <div class="w-full h-[3px] bg-[#3A86C8]"></div>
                         <div class="pt-2">
                             <img src="Question-Square 2.png" alt="Question Icon 2" class="w-8 h-8 object-contain" />
-                        </div>                  
-                        <h2 class="text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-md">
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-md">
                             Struggling to find balance in your personal life?
                         </h2>
                     </div>
                 </div>
-                <div class="h-[96px]"></div>
-                <div class="bg-[#FCD116] text-center px-6 py-20 flex flex-col items-center justify-center space-y-6">                   
-                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-light tracking-tight text-[#1A1A1A]">
-                    If so, join us for this free webinar!
+                <div class="h-12 md:h-24"></div>
+                <div class="bg-[#FCD116] text-center px-6 py-14 md:py-20 flex flex-col items-center justify-center space-y-6">
+                    <h3 class="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight text-[#1A1A1A]">
+                        If so, join us for this free webinar!
                     </h3>
                     <p class="font-sans text-sm md:text-base text-[#333333] max-w-xl leading-relaxed">
-                    Whatever the case may be, a certified life coach can guide you towards the path of self-discovery and personal growth.
-                    </p>                   
+                        Whatever the case may be, a certified life coach can guide you towards the path of self-discovery and personal growth.
+                    </p>
                     <button class="mt-4 bg-[#1A1A1A] text-white font-sans text-sm px-8 py-3 rounded-full hover:bg-black transition-colors duration-200">
-                    Join Us
-                    </button>                    
+                        Join Us
+                    </button>
                 </div>
-            </Section>
+            </section>
             
             <!--Section 3rd-->
 
-            <section class="w-full h-[720px] grid grid-cols-2 ">
-                <div class="flex flex-col justify-center items-center px-24 py-24">
-                    <span class=" bg-gray-200 border border-gray-200 rounded-full px-2 py-1 text-lg font-semibold text-gray-700 mb-4">Presenter</span>
-                    <h2 class="font-serif text-[48px] mb-6">Meet Reiki</h2>
-                    <p class="text-center text-2xl text-[16px]  max-w-[350px] mb-8">
-                    Reiki is a best-selling parenting author and speaker, and creator of this LifeCoach course
+            <section class="w-full grid grid-cols-1 md:grid-cols-2">
+                <div class="flex flex-col justify-center items-center px-6 sm:px-12 md:px-16 lg:px-24 py-16 md:py-24 text-center order-2 md:order-1">
+                    <span class="bg-gray-200 border border-gray-200 rounded-full px-2 py-1 text-sm md:text-lg font-semibold text-gray-700 mb-4">Presenter</span>
+                    <h2 class="font-serif text-3xl md:text-4xl lg:text-[48px] mb-6">Meet Reiki</h2>
+                    <p class="text-base md:text-lg max-w-[350px] mb-8">
+                        Reiki is a best-selling parenting author and speaker, and creator of this LifeCoach course
                     </p>
                     <button class="bg-black text-white px-6 py-3 rounded-full text-sm font-medium">
-                    Read My Reiki
+                        Read My Reiki
                     </button>
                 </div>
-                <div class="w-full h-[720px] bg-gray-200">
+                <div class="w-full h-[320px] md:h-[600px] lg:h-[720px] bg-gray-200 order-1 md:order-2">
                     <img src="reiki-portrait.png" alt="Reiki portrait" class="w-full h-full object-cover">
                 </div>
             </section>
 
             <!--Section 4th-->
 
-            <section class="w-full h-[700px] py-24 px-24 gap-[64px] text-center ">
-                <h2 class="font-serif text-[40px] mb-16">Checkout Our Free Resources</h2>         
-                    <div class="grid grid-cols-3 gap-[32px] max-w-[1100px] mx-auto">
-                        <div class="flex flex-col items-center">
-                            <div class="w-full h-[180px] rounded-xl mb-6 overflow-hidden flex items-center justify-center">
-                                <img src="Watch.png">
-                            </div>
+            <section class="w-full py-16 md:py-24 px-6 sm:px-12 md:px-16 lg:px-24 text-center">
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-[40px] mb-12 md:mb-16">Checkout Our Free Resources</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-[32px] max-w-[1100px] mx-auto">
+                    <div class="flex flex-col items-center">
+                        <div class="w-full h-[160px] md:h-[180px] rounded-xl mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="Watch.png">
+                        </div>
                         <h4 class="font-semibold text-lg mb-2">Watch</h4>
                         <p class="text-brandGray text-sm max-w-[250px]">Learn internal systems dynamics through short daily videos.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-full h-[160px] md:h-[180px] rounded-xl mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="Read.png">
                         </div>
-                        <div class="flex flex-col items-center">
-                            <div class="w-full h-[180px] rounded-xl mb-6 overflow-hidden flex items-center justify-center">
-                                <img src="Read.png">
-                            </div>
                         <h4 class="font-semibold text-lg mb-2">Read</h4>
                         <p class="text-brandGray text-sm max-w-[250px]">Deep dive frameworks inside curated, downloadable guides.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-full h-[160px] md:h-[180px] rounded-xl mb-6 overflow-hidden flex items-center justify-center">
+                            <img src="Listen.png">
                         </div>
-                        <div class="flex flex-col items-center">
-                            <div class="w-full h-[180px]  rounded-xl mb-6 overflow-hidden flex items-center justify-center">
-                                <img src="Listen.png">
-                            </div>
                         <h4 class="font-semibold text-lg mb-2">Listen</h4>
                         <p class="text-brandGray text-sm max-w-[250px]">Audio configurations designed around modern workflows.</p>
-                        </div>
                     </div>
+                </div>
             </section>
 
             <!--Section 5th-->
 
-            <section class="w-full h-[784px] px-[116px] py-[96px] grid grid-cols-1 md:grid-cols-2 gap-[64px] items-center">
-                <div class="pl-24 pr-16 py-20 flex flex-col justify-center">
-                    <span class="text-4xl text-brandGray mb-6">“</span>
-                    <h3 class="font-serif text-[32px] leading-snug mb-8 text-brandDark">
+            <section class="w-full px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div class="md:pl-12 lg:pl-24 md:pr-8 lg:pr-16 py-8 md:py-20 flex flex-col justify-center order-2 md:order-1">
+                    <span class="font-serif text-4xl text-brandGray mb-6">"</span>
+                    <h3 class="font-serif text-xl sm:text-2xl md:text-[32px] leading-snug mb-8 text-brandDark">
                         Thanks to this life coach, I have a clear roadmap for achieving my goals and creating the life I want. I'm so grateful for their support and guidance.
                     </h3>
-                    <button class="bg-black text-white px-6 py-3 rounded-full text-sm font-medium">
+                    <button class="bg-black text-white px-6 py-3 rounded-full text-sm font-medium self-start">
                         Read My Reiki
                     </button>
                 </div>
-                <div class="w-full h-[550px] bg-gray-100">
+                <div class="w-full h-[280px] md:h-[450px] lg:h-[550px] bg-gray-100 order-1 md:order-2">
                     <img src="Image1.png" class="w-full h-full object-cover">
                 </div>
             </section>
 
             <!--Section 6th-->
 
-            <Section class="px-[116px] py-[96px] w-full h-[416px] grid grid-cols-1 md:grid-cols-2 gap-[32px] items-center">  
+            <section class="px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[32px] items-start">
                 <div class="flex flex-col items-center text-center space-y-4 max-w-xl mx-auto">
                     <div class="mb-2">
                         <img src="activity-heart.png" alt="Activity Heart" class="w-10 h-10 object-contain" />
-                    </div>                   
-                    <h3 class="text-2xl md:text-3xl font-serif font-light leading-snug tracking-tight max-w-md">
+                    </div>
+                    <h3 class="font-serif text-xl sm:text-2xl md:text-3xl font-light leading-snug tracking-tight max-w-md">
                         Gain clarity, focus, and confidence in your abilities
-                    </h3>                   
+                    </h3>
                     <p class="font-sans text-xs md:text-sm text-gray-500 max-w-sm leading-relaxed">
                         Our experienced coaches work with you to identify and overcome limiting beliefs, create a roadmap for success, and provide ongoing support and guidance.
                     </p>
@@ -164,15 +167,15 @@
                 <div class="flex flex-col items-center text-center space-y-4 max-w-xl mx-auto">
                     <div class="mb-2">
                         <img src="message-smile-circle.png" alt="Message Smile Circle" class="w-10 h-10 object-contain" />
-                    </div>                   
-                    <h3 class="text-2xl md:text-3xl font-serif font-light leading-snug tracking-tight max-w-md">
+                    </div>
+                    <h3 class="font-serif text-xl sm:text-2xl md:text-3xl font-light leading-snug tracking-tight max-w-md">
                         Create the life you want
-                    </h3>                   
+                    </h3>
                     <p class="font-sans text-xs md:text-sm text-gray-500 max-w-sm leading-relaxed">
                         Don't let fear or self-doubt hold you back any longer. Our life coaching services can help you gain the clarity and direction you need to create the life you want.
                     </p>
                 </div>
-            </Section>
+            </section>
 
             <!--Section 7th-->
                 <Section class="relative px-[116px] py-[96px] w-full bg-[#FAF6F0]">
@@ -205,10 +208,10 @@
                 </Section>
 
             <!--Section 8th-->
-            <Section class="w-full h-[264px] bg-[#1A1A1A] text-white px-[116px] pb-[96px] pt-0">          
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start max-w-7xl mx-auto">
+            <section class="w-full bg-[#1A1A1A] text-white px-6 sm:px-10 md:px-16 lg:px-[116px] pb-12 md:pb-16 lg:pb-24 pt-12 md:pt-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start max-w-7xl mx-auto">
                     <div class="space-y-6">
-                        <h2 class="font-serif font-semibold text-4xl md:text-5xl lg:text-6xl text-[#92A65F] tracking-tight">
+                        <h2 class="font-serif font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#92A65F] tracking-tight">
                             Sunday, 19th March
                         </h2>
                         <p class="font-sans text-sm md:text-base text-gray-300 flex flex-wrap items-center gap-2 leading-relaxed tracking-wide">
@@ -227,34 +230,33 @@
                                 <span>Add to Calendar</span>
                             </button>
                         </div>
-                        </div>
-                            <div class="space-y-6">
-                                <h2 class="font-serif font-semibold text-4xl md:text-5xl lg:text-6xl text-white tracking-tight">
-                                    Online on Zoom
-                                </h2>
+                    </div>
+                    <div class="space-y-6">
+                        <h2 class="font-serif font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white tracking-tight">
+                            Online on Zoom
+                        </h2>
                         <p class="font-sans text-sm md:text-base text-gray-400 leading-relaxed">
                             Link will be shared before the event
                         </p>
                     </div>
                 </div>
-            </Section>            
+            </section>            
 
             <!--Section 9th-->
 
-            <section class="w-full h-[1088px] px-[116px] py-[96px] flex flex-col items-center justify-between">
+            <section class="w-full px-6 sm:px-10 md:px-16 lg:px-[116px] py-12 md:py-16 lg:py-24 flex flex-col items-center justify-between gap-12">
                 <div class="text-center max-w-2xl mx-auto space-y-4">
-                    <h2 class="font-serif font-light text-4xl md:text-5xl tracking-tight">
+                    <h2 class="font-serif font-light text-3xl sm:text-4xl md:text-5xl tracking-tight">
                         Invite your friends
                     </h2>
                     <p class="font-sans text-sm text-gray-600 leading-relaxed max-w-xl mx-auto">
                         We work with you to identify areas for improvement, develop effective communication strategies, and provide ongoing support and guidance.
                     </p>
                 </div>
-                <div class="h-[64px] shrink-0"></div>
-                    <div class="flex-grow w-full flex items-center justify-center overflow-hidden">
-                        <img src="Beige Modern Illustration Fundraiser Charity Event Flyer 1.png" class="max-h-[650px] w-auto object-contain drop-shadow-sm rounded-sm"/>
-                    </div>
-                <div class="pt-8 shrink-0">
+                <div class="w-full flex items-center justify-center overflow-hidden">
+                    <img src="Beige Modern Illustration Fundraiser Charity Event Flyer 1.png" class="max-h-[300px] sm:max-h-[450px] md:max-h-[650px] w-auto object-contain drop-shadow-sm rounded-sm"/>
+                </div>
+                <div>
                     <button class="bg-[#1A1A1A] text-white font-sans text-sm font-medium px-8 py-3.5 rounded-full hover:bg-black transition-colors duration-200 shadow-sm">
                         Share About The Event
                     </button>
@@ -263,14 +265,14 @@
 
             <!--Section 10th-->
 
-            <footer class="w-full bg-[#1A1A1A] text-white px-[116px] pt-[64px] pb-[48px] flex flex-col">
+            <footer class="w-full bg-[#1A1A1A] text-white px-6 sm:px-10 md:px-16 lg:px-[116px] pt-12 md:pt-16 pb-10 md:pb-12 flex flex-col">
                 <div class="flex flex-col space-y-6 items-start">
-                    <h2 class="font-serif font-black text-3xl tracking-tight text-white">
+                    <h2 class="font-serif font-black text-2xl md:text-3xl tracking-tight text-white">
                         Life Coach Reiki
                     </h2>
-                    
+
                     <!-- Footer Navigation Links -->
-                    <nav class="flex flex-wrap items-center gap-x-8 gap-y-3 font-sans text-sm text-gray-300">
+                    <nav class="flex flex-wrap items-center gap-x-6 md:gap-x-8 gap-y-3 font-sans text-sm text-gray-300">
                         <a href="#">About Us</a>
                         <a href="#">Success Stories</a>
                         <a href="#">Amazon Shop</a>
@@ -280,10 +282,10 @@
                     </nav>
                 </div>
                 <div class="w-full h-[1px] bg-gray-800 my-8"></div>
-                    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                        <p class="font-sans text-xs md:text-sm text-gray-400">
-                            &copy; 2023 Life Coach Reiki. All rights reserved.
-                        </p>
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="font-sans text-xs md:text-sm text-gray-400">
+                        &copy; 2023 Life Coach Reiki. All rights reserved.
+                    </p>
                     <div class="flex items-center space-x-5">
                         <a href="#">
                             <img src="Social icon (0).png" alt="Twitter"/>
@@ -304,8 +306,18 @@
                             <img src="Social icon (5).png" alt="Dribbble"/>
                         </a>
                     </div>
+                    </div>
                 </div>
             </footer>
         </div>
+        <script>
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileNav = document.getElementById('mobileNav');
+
+            menuBtn.addEventListener('click', () => {
+                mobileNav.classList.toggle('-left-full');
+                mobileNav.classList.toggle('left-0');
+            });
+        </script>
     </body>
 </html>
