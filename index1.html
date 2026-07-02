@@ -8,70 +8,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <title>My Personal CV</title>
-    
+    <title>Account Login</title>
+
     <style>
-        /* Applying your Google Fonts using custom CSS */
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-        }
-        body, p, li, a {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
+        h2 { font-family: 'Playfair Display', serif; }
+        body, label, input, button, p, a { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+<body class="bg-slate-50 min-h-screen flex items-center justify-center p-4">
 
-    <main class="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+    <main class="w-full max-w-md bg-white p-8 rounded-2xl border border-slate-200/80 shadow-xl shadow-slate-100">
         
-        <header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 text-center md:text-left md:flex md:items-center md:gap-8">
-            <img class="w-32 h-32 rounded-full mx-auto md:mx-0 object-cover border-4 border-slate-700 shadow-md" 
-                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" 
-                 alt="Profile Picture">
-            
-            <div class="mt-4 md:mt-0">
-                <h1 class="text-3xl md:text-4xl font-bold tracking-wide">Alex Morgan</h1>
-                <p class="text-slate-400 mt-1 text-lg font-light">Aspiring Web Developer & Designer</p>
-            </div>
+        <header class="mb-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-800">Welcome Back</h2>
+            <p class="text-sm text-slate-500 mt-2">Please enter your details to sign in</p>
         </header>
 
-        <div class="p-8 md:p-12 space-y-8">
+        <form action="#" method="POST" class="space-y-5">
             
-            <section>
-                <h2 class="text-xl font-bold text-slate-800 border-b border-gray-200 pb-2 mb-4">Contact Information</h2>
-                <ul class="space-y-2 text-sm text-gray-600">
-                    <li><strong>Email:</strong> <a href="mailto:alex.morgan@example.com" class="text-indigo-600 hover:underline">alex.morgan@example.com</a></li>
-                    <li><strong>Phone:</strong> <a href="tel:+1234567890" class="text-indigo-600 hover:underline">+1 (234) 567-890</a></li>
-                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank" class="text-indigo-600 hover:underline">linkedin.com/in/alexmorgan</a></li>
-                    <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank" class="text-indigo-600 hover:underline">github.com/alexmorgan</a></li>
-                </ul>
-            </section>
+            <div class="flex flex-col gap-1.5">
+                <label for="email" class="text-xs font-semibold text-slate-700 tracking-wide uppercase">
+                    Email Address
+                </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="you@example.com" 
+                    required
+                    class="w-full p-3 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:border-indigo-500 focus:bg-white transition-all"
+                />
+            </div>
 
-            <section>
-                <h2 class="text-xl font-bold text-slate-800 border-b border-gray-200 pb-2 mb-4">Education</h2>
-                <ol class="space-y-4 list-decimal list-inside text-gray-700">
-                    <li class="pl-2">
-                        <strong class="text-gray-900">B.S. in Computer Science</strong> — State University (2022 - 2026)
-                        <p class="text-sm text-gray-500 mt-1 ml-5">Graduated with Honors. Focused on software engineering and web technologies.</p>
-                    </li>
-                    <li class="pl-2">
-                        <strong class="text-gray-900">High School Diploma</strong> — Lincoln High School (2018 - 2022)
-                        <p class="text-sm text-gray-500 mt-1 ml-5">Lead organizer for the Tech & Coding Club.</p>
-                    </li>
-                </ol>
-            </section>
+            <div class="flex flex-col gap-1.5">
+                <div class="flex justify-between items-center">
+                    <label for="password" class="text-xs font-semibold text-slate-700 tracking-wide uppercase">
+                        Password
+                    </label>
+                    <a href="#" class="text-xs font-medium text-indigo-600 hover:underline">Forgot password?</a>
+                </div>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="••••••••" 
+                    required
+                    class="w-full p-3 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:border-indigo-500 focus:bg-white transition-all"
+                />
+            </div>
 
-            <section>
-                <h2 class="text-xl font-bold text-slate-800 border-b border-gray-200 pb-2 mb-4">Hobbies & Interests</h2>
-                <ul class="grid grid-cols-2 gap-2 text-gray-700 list-disc list-inside">
-                    <li>Photography</li>
-                    <li>Open Source Contributing</li>
-                    <li>Hiking & Travelling</li>
-                    <li>Playing Acoustic Guitar</li>
-                </ul>
-            </section>
+            <div class="flex items-center gap-2 py-1">
+                <input 
+                    type="checkbox" 
+                    id="remember" 
+                    name="remember" 
+                    class="w-4 h-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                >
+                <label for="remember" class="text-sm text-slate-600 select-none">Remember me for 30 days</label>
+            </div>
 
-        </div>
+            <button 
+                type="submit" 
+                class="w-full h-11 mt-2 bg-slate-900 text-white font-medium text-sm rounded-lg hover:bg-slate-800 focus:ring-2 focus:ring-slate-900/20 transition-all cursor-pointer"
+            >
+                Sign In
+            </button>
+
+        </form>
+
+        <footer class="mt-8 text-center">
+            <p class="text-sm text-slate-500">
+                Don't have an account? 
+                <a href="#" class="font-semibold text-indigo-600 hover:underline ml-1">Sign up free</a>
+            </p>
+        </footer>
+
     </main>
+
 </body>
 </html>

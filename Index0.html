@@ -9,55 +9,42 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     
         <style>
-        h1, h2, h3 {font-family: 'Playfair Display', serif;}
-        body, p, li, a {font-family: 'Plus Jakarta Sans', sans-serif;}
+            h2 { font-family: 'Playfair Display', serif; }
+            body, label, input, button, p { font-family: 'Plus Jakarta Sans', sans-serif; }
         </style>
     </head>
 
-    <body class="bg-gray-50 text-gray-800 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-        <main class="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <!--PROFILE-->
-            <header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 text-center md:text-left md:flex md:items-center md:gap-8">
-                <img class="w-32 h-32 rounded-full mx-auto md:mx-0 object-cover border-4 border-slate-700 shadow-md" src="Avatar.png">
-                    <div class="mt-4 md:mt-0">
-                        <h1 class="text-3xl md:text-4xl font-bold tracking-wide">NAME</h1>
-                        <p class="text-slate-400 mt-1 text-lg font-light">INTRO</p>
-                    </div>
-            </header>
-            <div class="p-8 md:p-12 space-y-8">
-                <!--CONTACT INFORMATION-->
-                <section>
-                    <h2 class="text-xl font-bold text-slate-800 border-b border-gray-200 pb-2 mb-4">Contact Information</h2>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li><strong>Email:</strong> <a href="#" class="text-indigo-600 hover:underline">EMAIL</a></li>
-                        <li><strong>Phone:</strong> <a href="#" class="text-indigo-600 hover:underline">NUMBER</a></li>
-                    </ul>
-                </section>
-                <!--EDUCATION-->
-                <section>
-                    <h2 class="text-xl font-bold text-slate-800 border-b border-gray-200 pb-2 mb-4">Education</h2>
-                    <ol class="space-y-4 list-decimal list-inside text-gray-700">
-                        <li class="pl-2">
-                            <strong class="text-gray-900">UNIVERSITY</strong>
-                            <p class="text-sm text-gray-500 mt-1 ml-5">DETAIL</p>
-                        </li>
-                        <li class="pl-2">
-                            <strong class="text-gray-900">HIGH SHOOL</strong>
-                            <p class="text-sm text-gray-500 mt-1 ml-5">DETAIL</p>
-                        </li>
-                    </ol>
-                </section>
-                <!--HOBBIES-->
-                <section>
-                    <h2 class="text-xl font-bold text-slate-800 border-b border-gray-200 pb-2 mb-4">Hobbies</h2>
-                    <ul class="grid grid-cols-2 gap-2 text-gray-700 list-disc list-inside">
-                        <li>HOBBIE 1</li>
-                        <li>HOBBIE 2</li>
-                        <li>HOBBIE 3</li>
-                        <li>HOBBIE 4</li>
-                    </ul>
-                </section>
+    <body class="bg-slate-50 min-h-screen flex items-center justify-center p-4">
+        <main class="w-full max-w-md bg-white p-8 rounded-2xl border border-slate-200/80 shadow-xl shadow-slate-100">
+        
+        <header class="mb-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-800">Login</h2>
+            <p class="text-sm text-slate-500 mt-2">Please enter your details to login</p>
+        </header>
+
+        <form action="#" class="space-y-5">
+            
+            <div class="flex flex-col gap-1.5">
+                <label class="text-xs font-semibold text-slate-700 tracking-wide uppercase">
+                    Email Address
+                </label>
+                <input placeholder="you@example.com" class="w-full p-3 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:border-indigo-500 focus:bg-white transition-all"/>
             </div>
-        </main>
+
+            <div class="flex flex-col gap-1.5">
+                <div class="flex justify-between items-center">
+                    <label class="text-xs font-semibold text-slate-700 tracking-wide uppercase">Password</label>
+                </div>
+                <input placeholder="••••••••" class="w-full p-3 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:border-indigo-500 focus:bg-white transition-all"/>
+            </div>
+
+            <button class="w-full h-11 mt-2 bg-slate-900 text-white font-medium text-sm rounded-lg hover:bg-slate-800 focus:ring-2 focus:ring-slate-900/20 transition-all cursor-pointer">
+                Sign In
+            </button>
+
+        </form>
+
+
+    </main>
     </body>
 </html>
