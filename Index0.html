@@ -10,103 +10,87 @@
     
     </head>
 
-    <body class="bg-slate-50 text-slate-800 font-sans antialiased">
-        
-        <!--Navigation Bar-->
-        
-        <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
-            <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
-                <div class="text-xl font-bold text-indigo-600 tracking-tight">
-                    Product<span class="text-slate-900">Name</span>
-                </div>
-            
-                <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
-                    <a href="#features" class="hover:text-indigo-600 transition-colors">Features</a>
-                    <a href="#" class="hover:text-indigo-600 transition-colors">Pricing</a>
-                    <a href="#" class="hover:text-indigo-600 transition-colors">About</a>
-                </nav>
+    <body class="bg-stone-50 text-stone-800 font-serif antialiased">
 
-                <div>
-                    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition-all shadow-sm">Get Started</a>
-                </div>
+        <header class="bg-white border-b border-stone-200 sticky top-0 z-50 shadow-sm font-sans">
+            <div class="max-w-6xl mx-auto px-4 h-16 flex justify-between items-center">
+                <a href="#" class="text-xl font-black tracking-wider uppercase text-stone-900">The<span class="text-amber-700">Blog</span></a>
+            
+                <nav class="flex space-x-6 text-sm font-medium text-stone-600">
+                    <a href="#" class="hover:text-amber-700 transition-colors">Articles</a>
+                    <a href="#" class="hover:text-amber-700 transition-colors">Newsletter</a>
+                    <a href="#" class="hover:text-amber-700 transition-colors">About</a>
+                </nav>
             </div>
         </header>
 
-        <!--Advertising Banner-->
-
-        <main>
-            <section class="max-w-7xl mx-auto px-6 py-20 lg:py-32 flex flex-col lg:flex-row items-center justify-between gap-12">
-                <div class="flex-1 text-center lg:text-left max-w-2xl">
-                    
-                    <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 mb-6">✨ Introducing Product</span>
-                    
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">TEXT <span class="text-indigo-600">TEXT</span></h1>
-                    
-                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">TEXT</p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#" class="bg-slate-950 text-white px-6 py-3 rounded-xl font-medium hover:bg-slate-800 transition-all text-center">Start Free Trial</a>
-                        <a href="#" class="border border-slate-200 bg-white text-slate-700 px-6 py-3 rounded-xl font-medium hover:bg-slate-50 transition-all text-center">Book a Demo</a>
+        <main class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-10 gap-12">
+        
+            <section class="lg:col-span-7">
+                <article class="prose max-w-none">
+                    <div class="flex items-center gap-3 text-sm font-sans text-stone-500 mb-4">
+                        <span>Design Systems</span>
+                        <span>•</span>
+                        <time datetime="2026-07-07">July 7, 2026</time>
                     </div>
-                
-                </div>
 
-                <div class="flex-1 w-full max-w-md lg:max-w-none">
-                    <div class="aspect-video lg:aspect-square bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-2xl shadow-xl flex items-center justify-center text-white p-8">
-                        <div class="text-center">
-                            <div class="text-5xl mb-4">📊</div>
-                            <p class="font-semibold text-lg">Preview</p>
-                        </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-stone-900 leading-tight mb-6">TEXT</h1>
+
+                    <div class="w-full h-80 bg-stone-200 rounded-lg mb-8 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-amber-900/20 to-transparent"></div>
+                        <div class="w-full h-full flex items-center justify-center text-stone-400 font-sans text-sm">[ Featured Article  Graphic ]</div>
                     </div>
-                </div>
+
+                    <p class="text-lg lg:text-xl text-stone-700 leading-relaxed mb-6 italic font-sans border-l-4 border-amber-700 pl-4">
+                        “TEXT” 
+                    </p>
+                    <p class="text-stone-700 leading-relaxed mb-6 text-base sm:text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar vestibulum erat, non dictum ex varius sed. Cras pretium, mi ut dictum vulputate, erat ligula sodales dolor, vel imperdiet lectus magna vitae sem. Aliquam sit amet lacinia massa, sit amet interdum nulla. 
+                    </p>
+                    <p class="text-stone-700 leading-relaxed mb-6 text-base sm:text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar vestibulum erat, non dictum ex varius sed. Cras pretium, mi ut dictum vulputate, erat ligula sodales dolor, vel imperdiet lectus magna vitae sem. Aliquam sit amet lacinia massa, sit amet interdum nulla.
+                    </p>
+                    <p class="text-stone-700 leading-relaxed mb-6 text-base sm:text-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar vestibulum erat, non dictum ex varius sed. Cras pretium, mi ut dictum vulputate, erat ligula sodales dolor, vel imperdiet lectus magna vitae sem. Aliquam sit amet lacinia massa, sit amet interdum nulla.
+                    </p>
+                </article>
             </section>
 
-            <section id="features" class="bg-white border-y border-slate-100 py-20 lg:py-28">
-                <div class="max-w-7xl mx-auto px-6">
-                    <div class="text-center max-w-2xl mx-auto mb-16">
-                        <h2 class="text-3xl font-bold text-slate-900 mb-4 tracking-tight">TEXT</h2>
-                        <p class="text-slate-600">TEXT</p>
-                    </div>
+            <aside class="lg:col-span-3 border-t lg:border-t-0 lg:border-l border-stone-200 pt-8 lg:pt-0 lg:pl-8 font-sans">
+                <h2 class="text-xs uppercase tracking-widest font-bold text-stone-900 mb-6 pb-2 border-b border-stone-200">Featured Articles</h2>
 
-                    <div class="flex flex-col md:flex-row justify-between items-stretch gap-8">
-                        <article class="flex-1 bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-                            <div>
-                                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-6">⚡</div>
-                                <h3 class="text-xl font-bold text-slate-900 mb-3">TEXT</h3>
-                                <p class="text-slate-600 leading-relaxed">TEXT</p>
-                            </div>
-                        </article>
+                <div class="space-y-8">
+                    <article class="group">
+                        <span class="text-xs font-semibold text-amber-700 uppercase tracking-wider block mb-1">Topic1</span>
+                        <h3 class="font-bold text-stone-900 leading-snug group-hover:text-amber-700 transition-colors">
+                            <a href="#">TEXT</a>
+                        </h3>
+                        <p class="text-xs text-stone-500 mt-2">Read time: 4 mins</p>
+                    </article>
 
-                        <article class="flex-1 bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-                            <div>
-                                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-xl mb-6">🔒</div>
-                                <h3 class="text-xl font-bold text-slate-900 mb-3">TEXT</h3>
-                                <p class="text-slate-600 leading-relaxed">TEXT</p>
-                            </div>
-                        </article>
+                    <article class="group">
+                        <span class="text-xs font-semibold text-amber-700 uppercase tracking-wider block mb-1">Topic2</span>
+                        <h3 class="font-bold text-stone-900 leading-snug group-hover:text-amber-700 transition-colors">
+                            <a href="#">TEXT</a>
+                        </h3>
+                        <p class="text-xs text-stone-500 mt-2">Read time: 6 mins</p>
+                    </article>
 
-                        <article class="flex-1 bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-md transition-all">
-                            <div>
-                                <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center text-xl mb-6">🗣️</div>
-                                <h3 class="text-xl font-bold text-slate-900 mb-3">TEXT</h3>
-                                <p class="text-slate-600 leading-relaxed">TEXT</p>
-                            </div>
-                        </article>
-                    </div>
+                    <article class="group">
+                        <span class="text-xs font-semibold text-amber-700 uppercase tracking-wider block mb-1">Topic3</span>
+                        <h3 class="font-bold text-stone-900 leading-snug group-hover:text-amber-700 transition-colors">
+                            <a href="#">TEXT</a>
+                        </h3>
+                        <p class="text-xs text-stone-500 mt-2">Read time: 3 mins</p>
+                    </article>
                 </div>
-            </section>
+            </aside>
+
         </main>
 
-        <footer class="bg-slate-950 text-slate-400 py-12 text-sm">
-            <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-6">
-                <div><p>&copy; TEXT All rights reserved.</p></div>
-            
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
-                    <a href="#" class="hover:text-white transition-colors">Contact Support</a>
-                </div>
-            </div>
+        <footer class="bg-stone-900 text-stone-400 py-8 text-center text-xs font-sans mt-20 border-t border-stone-800">
+            <p>&copy; 2026</p>
         </footer>
+
     </body>
 </html>
